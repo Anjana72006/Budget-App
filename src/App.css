@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #f8e1ff, #e1bee7, #d1a3ff);
+}
+
+/* Container */
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: #6a1b9a;
+}
+
+/* Balance card */
+.balance {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.income {
+  color: green;
+  font-weight: bold;
+}
+
+.expense {
+  color: red;
+  font-weight: bold;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Input focus */
+.form input:focus {
+  border-color: #ba68c8;
+  box-shadow: 0 0 5px rgba(186,104,200,0.5);
+}
+
+/* Button */
+.form button {
+  padding: 10px;
+  background: linear-gradient(135deg, #9c27b0, #7b1fa2);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button hover */
+.form button:hover {
+  background: linear-gradient(135deg, #ba68c8, #8e24aa);
+  transform: scale(1.03);
+}
+
+/* Transaction list */
+.list {
+  margin-top: 10px;
+}
+
+.list h3 {
+  text-align: center;
+  color: #6a1b9a;
+}
+
+/* Transaction item */
+.item {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* hover effect */
+.item:hover {
+  transform: scale(1.02);
+}
+
+/* income/expense borders */
+.item.income {
+  border-left: 5px solid green;
+}
+
+.item.expense {
+  border-left: 5px solid red;
+}
+
+/* delete button */
+.item button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.item button:hover {
+  color: #9c27b0;
+  transform: scale(1.2);
+}
